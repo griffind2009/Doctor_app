@@ -1,4 +1,8 @@
 class DoctorsController < ApplicationController
+
+  def get_doctor
+      @doctor = Doctor.new(params[:name])
+  end
   def index
     @doctors = Doctor.all
     respond_to do |format|
