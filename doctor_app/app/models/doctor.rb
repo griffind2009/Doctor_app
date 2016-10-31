@@ -1,5 +1,5 @@
 class Doctor < ActiveRecord::Base
-  has_many :reivews
+  has_many :reviews
 
 
 
