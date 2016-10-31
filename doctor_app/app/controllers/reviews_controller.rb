@@ -2,41 +2,41 @@ class ReviewsController < ApplicationController
   def index
     @doctor = Doctor.find(params[:doctor_id])
     @reviews = @doctor.reviews
-    respond_to do |format|
-      format.html { render :index }
-      format.json { render json: @reviews }
-    end
-    end
+    render json: @reviews
+  end
+
   def show
     @doctor = Doctor.find(params[:doctor_id])
     @review = Review.find(params[:id])
- respond_to do |format|
-   format.html { render :show }
-   format.json { render json: @review }
- end
+    render json: @review
   end
+
   def new
     @doctor = Doctor.find(params[:doctor_id])
     @review = Review.new
+    render json: @review
   end
 def create
     @doctor = Doctor.find(params[:doctor_id])
     @review = @doctor.reviews.create!(review_params)
-    redirect_to review_path(@review)
+    render json: @review
+
 end
 def edit
   @review = Review.find(params[:id])
-
+  @doctor=@review.doctor
+  render json: @review
 end
 def update
+  @doctor = Doctor.find(params[:doctor_id])
     @review = Review.find(params[:id])
     @review.update(review_params)
-    redirect_to review_path(@review)
+    render json: @review
 end
 def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    redirect_to reviews_path
+    render json: @review
 end
 
 
