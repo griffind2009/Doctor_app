@@ -10,7 +10,7 @@ Review.destroy_all
 
 
 mark = Doctor.create({name: "Mark Cinnamon", education: "Harvard Medical School", practice: "George Washington Hospital", specialty: "Internist", img_url: "https://asset2.betterdoctor.com/images/534f2d9c4214f837f0000155-1_thumbnail.jpg" })
-elizabeth = Doctor.create({name: "Elizabeth Smith", education: "University of Cincinnati Medical School", practice: "Smilez", specialty: "Orthodontist", img_url: "https://asset4.betterdoctor.com/images/5344e6894214f81792000171-1_thumbnail.jpg"})
+elizabeth = Doctor.create({name: "Elizabeth Smith", education: "University of Cincinnati Medical School", practice: "Smilez", specialty: "Orthodontist", img_url: "https://asset4.betterdoctor.com/images/53478e014214f85414000216-1_thumbnail.jpg"})
 michael = Doctor.create({name: "Michael Johnson", education: "George Washington University", practice: "Sibley Memorial Hospitaly", specialty: "Gastroenterology", img_url: "https://asset4.betterdoctor.com/images/5344e6894214f81792000171-1_thumbnail.jpg"})
 jacob = Doctor.create({name: "Jacob Edwards", education: "Georgetown University", practice: "Howard University", specialty: "Podiatrist", img_url: "https://asset2.betterdoctor.com/images/53473dc34214f80b740000a7-1_thumbnail.jpg"})
 gloria = Doctor.create({ name: "Gloria Banks", education: "New York Downstate Medical School", practice: "Washington Center", specialty: "Neurosurgeon", img_url: "https://asset4.betterdoctor.com/images/544f131a4214f809230001ca-2_thumbnail.jpg"})
