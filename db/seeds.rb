@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Doctor.destroy_all
+
 Review.destroy_all
+Doctor.destroy_all
 
 
 mark = Doctor.create({name: "Mark Cinnamon", education: "Harvard Medical School", practice: "George Washington Hospital", specialty: "Internist", img_url: "https://asset2.betterdoctor.com/images/534f2d9c4214f837f0000155-1_thumbnail.jpg" })
